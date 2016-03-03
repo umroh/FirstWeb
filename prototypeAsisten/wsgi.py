@@ -16,6 +16,12 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "prototypeAsisten.settings")
 
 application = get_wsgi_application()
 
-path = '/templates/home.html'  # use your own username here
+path = '/home/umroh/PycharmProjects/prototypeAsisten'  # use your own username here
 if path not in sys.path:
     sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
