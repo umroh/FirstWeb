@@ -1,0 +1,2 @@
+Untuk menjalankan server tanpa mati:
+    nohup python manage.py runserver~
