@@ -1,20 +1,26 @@
 <html>
     <head>
-        <title>Prototype SiAsisten</title>
+        <title>Umroh Machfudza Sihaloho</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     </head>
     <body>
-        <div>
-            <h1><a href="">Percobaan isi</a></h1>
+        <div id='header'>
         </div>
-        <div>
-            {% for entry in entry_log %}
+        <div id='content'>
+            <h1><a href="">Percobaan isi</a></h1>
+            <div>
+                {% for entry in entry_log %}
 
-                <br> <h3> {{ entry.log_name }} </h3>
-                <br> {{ entry.log_content }}
-                <br>
-            {% endfor %}
+                    <br> <h3> {{ entry.log_name }} </h3>
+                    <br> {{ entry.log_content }}
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id='footer'>
+
         </div>
     </body>
 </html>
